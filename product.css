@@ -1,0 +1,15 @@
+body{
+	background-color: cyan;
+	font-size: 17px;
+	font-style: bold;
+}
+table, tr, td{
+	border:5px solid black;
+	border-collapse: collapse;
+}
+tr,td{
+	padding:10px;
+	border:1px solid black;
+	
+	
+}

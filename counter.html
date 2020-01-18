@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		body{
+	counter-reset:section;
+}
+h2::before{
+	counter-increment:section;
+	content:" "counter(section)":";
+}
+</style>
+
+<body>
+<h1>CSS Tutorial Titles</h1>
+<h2>html</h2>
+<h2>css</h2>
+<h2>javascript</h2>
+</body>
+</html>
