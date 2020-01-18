@@ -1,0 +1,46 @@
+header{
+	background-color: lightyellow;
+	font-size: 50px;
+	color: brown;
+	font-size: 60px;
+
+}
+body{
+	background-color: white;
+	font-size: 17px;
+	font-style: bold;
+}
+.b1{
+	background-color: #DAF7A6;
+}
+table, tr, td{
+	background-color: lightblue;
+	padding: 5px;
+	border:5px solid black;
+	border-collapse: collapse;
+	font-style: bold;
+}
+tr,td{
+	padding:15px;
+	border:1px solid black;
+	font-style: bold;
+	font-size: 20px;	
+}
+h1{
+
+	border-bottom: 3px solid darkblue;
+	color: green;
+	font-style: bold;
+
+}
+h2{
+	color: blue;
+	background-color: yellow;
+}
+footer{
+	background-color: olive;
+	font-size: 30px;
+	color: blue;
+	font-style: bold;
+
+}

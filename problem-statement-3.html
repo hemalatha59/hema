@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="passport.css">
+</head>
+<center>
+<header>Passport Seva System Support</header>
+
+<body>
+<h1>Registration Page</h1>
+<form action="passportreg.html">
+	 <table width="600">
+	 	<tr>
+	 		<td>UserName</td>
+	 		<td><input type="text" name="name" required></td>
+	 	</tr>
+	 	<tr>
+	 		<td>Password</td>
+	 		<td><input type="Password" name="pwd" value="*" required></td>
+	 	</tr>
+	 	<tr>
+	 		<td>Qualification</td>
+	 		<td><input type="text" name="qual" list="exampleList">
+	 		
+			<datalist id="exampleList">
+  			<option value="B.Tech"></option>  
+  				<option value="BE"></option>
+  				<option value="B.Sc"></option>
+  				<option value="M.Tech"></option>
+
+			</datalist>
+		</td>
+	 	</tr>
+	 	<tr>
+	 		<td>Contact</td>
+	 		<td><input type="text" name="Contact"></td>
+	 	</tr>
+	 	<tr>
+	 		<td>Date of Birth</td>
+	 		<td><input type="date" name="dob"></td>
+	 	</tr>
+	 	<tr>
+	 	<td>Apply Type</td>
+	 	<td><input type="combobox" name="Applytype" list="exampleList1">
+	 		
+			<datalist id="exampleList1">
+  			<option value="Fresh Passport">Fresh Passport</option>  
+  				<option value="Diplomatic Passport">Diplomatic Passport</option>
+  				<option value="Tatkal Scheme">Tatkal Scheme</option>
+  				<option value="Reissue of Passport">Reissue of Passport</option>
+
+			</datalist></td>
+	 	</tr>
+	 	<tr>
+	 		<td>Gender</td>
+	 		<td><input type="radio" name="gender">Male
+	 			<input type="radio" name="gender">Female
+	 		</td>
+	 	</tr>
+	 	<tr>
+	 		<td>Hint Question</td>
+	 		<td><select>
+	 			<option>what is your nationality?</option>
+	 			<option>what is your pet name?</option>
+	 			<option>what is your favorite color?</option>
+
+	 			<option>what is your favourite flower?</option>
+
+	 			<option>what is your favourite hero?</option>
+
+	 		</select></td>
+	 	</tr>
+	 	<tr>
+	 		<td>Hint Answer</td>
+	 		<td><input type="text" name="ans"></td>
+	 	</tr>
+	 	<tr>
+	 		<td colspan="2" align="center"><input type="image" src="submit.gif" alt="submit"></td>
+	 	</tr>
+
+	 </table>
+</form>
+</center>
+</body>
+
+</html>
