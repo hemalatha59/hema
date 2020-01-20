@@ -8,33 +8,48 @@
 <center>
 <header>User Registration Screen</header>
 <body>
+<script type="text/javascript">
+	function validate(){
+	var pwd1=document.myform.pwd1.value;
+	var pwd2=document.myform.pwd2.value;
+	if(pwd1==null || pwd1=="")
+	{
+		alert("Password can't be null");
+		return false;
+	}
+	else if(pwd1!=pwd2){
+		alert("Password must be same");
+		return false;
+	}
+}
 
+</script>
 
-<form action="statemen4.html">
+<form action="statemen4.html" method="post" name="myform" onsubmit="return validate()">
 <h1>Online Hotel Information System </h1>
 
 	 <table>
 	 	<tr>
 	 		<td>Email Id</td>
-	 		<td><input type="text" name="name" required></td>
+	 		<td><input type="email" name="name" required></td>
 	 	</tr>
 	 	<tr>
 	 		<td>Password</td>
-	 		<td><input type="Password" name="pwd" maxlength="8" required></td>
+	 		<td><input type="Password" name="pwd1" pattern="[a-zA-Z][a-zA-Z0-9]+" ></td>
 	 	</tr>
 	 	<tr>
 	 		<td>Retype Password</td>
-	 		<td><input type="Password" name="pwd" maxlength="8" required></td>
+	 		<td><input type="Password" name="pwd2" pattern="[a-zA-Z][a-zA-Z0-9]+"></td>
 	 	</tr>
 	 	<tr>
 	 		<td>Address</td>
-	 		<td><input type="text" name="" maxlength="250" required=""></td>
+	 		<td><input type="text" name="" maxlength="250" ></td>
 	 	</tr>
 	 	<tr>
 	 		<td>Phone No</td>
 	 		<td>
-	 			Mobile<input type="text" name="num"><br><br>
-	 			LandNo<input type="text" name="landnum">
+	 			Mobile<input type="text" name="num" maxlength="10" size="10"><br><br>
+	 			LandNo<input type="number" name="landnum">
 	 		</td>
 	 </tr>
 	 	

@@ -3,23 +3,42 @@
 <head>
 	<title>Online Registration Form</title>
 	<link rel="stylesheet" type="text/css" href="online-reg.css">
+	
 </head>
 <center>
 <body>
+	<script type="text/javascript">
+	function validateForm()
+	{
+	var name=document.form1.name.value;
+	var pwd=document.form1.pwd.value;
+		if (name==null || name=="")
+		{  
+		  	alert("Name can't be blank");  
+		  	return false;  
+		}
+		else if(pwd.length<8)
+		{  
+		  	alert("Password must be at least 6 characters long.");  
+		  	return false;  
+	  	}  
+	}  
+
+</script>
 	<h1>Online Registration Form</h1>
-<form action="online-form.html">
+<form name="form1" action="online-form.html" method="post"  onsubmit="return validateForm()">
 	 <table width="400">
 	 	<tr>
 	 		<td>Name</td>
-	 		<td><input type="text" name="name" required></td>
+	 		<td><input type="text" name="name"></td>
 	 	</tr>
 	 	<tr>
 	 		<td>Password</td>
-	 		<td><input type="Password" name="pwd" value="*" required></td>
+	 		<td><input type="Password" name="pwd"></td>
 	 	</tr>
 	 	<tr>
 	 		<td>Address</td>
-	 		<td><textarea cols="10" rows="5" maxlength="250" required=""></textarea></td>
+	 		<td><textarea cols="10" rows="5" maxlength="250"></textarea></td>
 	 	</tr>
 	 	<tr>
 	 		<td>Country</td><td><select>
@@ -48,6 +67,7 @@
 	 	</tr>
 
 	 </table>
+
 </form>
 </body>
 </center>
