@@ -15,7 +15,6 @@ public class AgeCalculator {
 		Date d1=sdf.parse(dob);
 		Calendar c=Calendar.getInstance();
 		c.setTime(d1);
-		System.out.println(c.getTime());
 		int year=c.get(Calendar.YEAR);
 		int month=c.get(Calendar.MONTH);
 		int day=c.get(Calendar.DATE);
